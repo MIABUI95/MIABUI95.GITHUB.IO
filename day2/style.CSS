@@ -1,0 +1,11 @@
+/*Day la chu thich trong file CSS*/ 
+* {margin: 0;}
+.truyen-kieu {
+    font-size: 24px;
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5; 
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: cornflowerblue;
+}
