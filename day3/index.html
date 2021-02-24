@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=CSS, initial-scale=1.0">
+    <title>CSS layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style> 
+    .icon-color { color: brown;} 
+    .font { font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: cadetblue;}
+    .size { width: 200px; height: 200px; margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;}
+    .red {background-color: red;
+    width: 400px;}
+    .green {background-color: green; height: 200px}
+    .blue {background-color: blue; height: 200px}
+    .general {
+        float: left;
+
+    }
+    .parents {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+
+      }
+      .grand {display: flex; 
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;}
+      h2 {  clear: both;
+
+padding-top: 20px; }
+    </style>
+   
+    
+</head>
+<body>
+     <!-- font icons -->
+     <h2>font icons</h2>
+     <p> Đây là biểu tượng trái tim <i class="fas fa-heart icon-color"></i></p>
+ 
+     <!-- font family -->
+     <!-- go to fonts.google.com, then choose any fonts, then copy <link> if html, @import if CSS, copy the name of font family into tag <style> -->
+
+     <h2> font family </h2>
+     <p class="font"> Kiên nhẫn là sự thành công</p>
+     <!-- float -->
+     <div class="size red general"> div 1</div>
+     <div class="size green general">  div 2</div>
+     <div class="size blue general"> div 3</div>
+     <!-- flex -->
+     <h2>Flex</h2>
+     <div class="parents">
+        <div class="size red"> item1</div>
+        <div class="grand"> <div class="size green">  item2</div>
+        <div class="size blue"> item3</div></div>
+     </div>
+
+</body>
+</html>
